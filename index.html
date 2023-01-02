@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css">
+  <link rel="icon" href="favicon.ico">
+  <title>Happy Birthday</title>
+  <style media="screen">
+    * {
+      transition: all 0.2s ease-in-out;
+    }
+
+
+    body {
+      background: #008888;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .card {
+      background: #fdfdfd;
+      border-radius: 4px;
+      height: 85vh;
+      width: 85vw;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      .card {
+        flex-direction: row-reverse;
+      }
+
+      .card img.birthday {
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+      }
+    }
+
+    @media only screen and (min-width: 640px) {
+      .card {
+        flex-direction: row-reverse;
+      }
+
+      .card img.birthday {
+        width: 100%;
+        max-width: 50vw;
+        max-height: 80vh;
+      }
+    }
+
+
+    img.birthday {
+      max-height: 40vh;
+
+    }
+
+    .text {
+      padding: 1em;
+    }
+
+    .muted {
+      opacity: 0.8;
+    }
+
+    .space {
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="./happy-birthday1.png" alt="birthday" class="birthday">
+    <div class="text">
+      <h1> <i> <strong>Happy Birthday!</strong></i></h1>
+      <p> “You are only young once, but you can be immature for a lifetime. <strong>Happy birthday!</strong>”</p>
+      <p class="muted">-Jitendra Kumar</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
